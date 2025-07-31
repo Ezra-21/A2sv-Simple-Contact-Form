@@ -1,0 +1,110 @@
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+}
+
+form{
+  background-color: white;
+  max-width: 600px;
+  width: 100%;
+  padding: 25px 25px 35px;
+  border-radius:8px ;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #333;
+  margin: 25px;
+}
+
+form h2{
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.input-box{
+  margin-top: 20px;
+}
+
+.input-box .field{
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #ddd;
+  outline: none;
+  border-radius: 7px;
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  margin-top: 8px;
+  
+}
+
+.input-box .field_mess{
+  height: 200px;
+  width: 100%;
+  outline: none;
+  resize: none;
+  border: 2px solid #ddd;
+
+}
+
+form button{
+  width: 100%;
+  border-radius: 2px;
+  height: 50px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ;
+}
+form button:hover{
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+}.success-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: 500;
+  z-index: 9999;
+  animation: slideDown 0.5s ease-out, fadeOut 0.5s ease-in 3s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+}
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
